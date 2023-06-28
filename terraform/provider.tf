@@ -9,7 +9,7 @@ provider "aws" {
   # shared_credentials_files = ["~/.aws/creds"]
 
   # Or enable and set these variables here:
-  # region     = "eu-central-1"
-  # access_key = "my-access-key"
-  # secret_key = "my-secret-key"
+  region     = "us-east-1"
+  access_key = "AKIA4MT346CG3QBS4B4B"
+  secret_key = "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"
 }

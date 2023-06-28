@@ -11,7 +11,7 @@ digraph {
 		"[root] provider[\"registry.terraform.io/hashicorp/local\"]" [label = "provider[\"registry.terraform.io/hashicorp/local\"]", shape = "diamond"]
 		"[root] var.client_count" [label = "var.client_count", shape = "note"]
 		"[root] var.client_name_prefix" [label = "var.client_name_prefix", shape = "note"]
-		"[root] var.first_name" [label = "var.first_name", shape = "note"]
+		"[root] var.dc_tag_prefix" [label = "var.dc_tag_prefix", shape = "note"]
 		"[root] var.instance_type" [label = "var.instance_type", shape = "note"]
 		"[root] var.public_key" [label = "var.public_key", shape = "note"]
 		"[root] var.server_count" [label = "var.server_count", shape = "note"]
@@ -27,7 +27,7 @@ digraph {
 		"[root] aws_instance.servers (expand)" -> "[root] var.server_count"
 		"[root] aws_instance.servers (expand)" -> "[root] var.server_name_prefix"
 		"[root] aws_key_pair.key (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
-		"[root] aws_key_pair.key (expand)" -> "[root] var.first_name"
+		"[root] aws_key_pair.key (expand)" -> "[root] var.dc_tag_prefix"
 		"[root] aws_key_pair.key (expand)" -> "[root] var.public_key"
 		"[root] data.aws_ami.ubuntu (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
 		"[root] local.instance_ami (expand)" -> "[root] data.aws_ami.ubuntu (expand)"

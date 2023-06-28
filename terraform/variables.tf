@@ -1,6 +1,6 @@
-variable "first_name" {
+variable "dc_tag_prefix" {
   type        = string
-  description = "Please enter your first name. This will be used in several components."
+  description = "Please enter DatacenterTag prefix. This will be used in several components."
 }
 
 variable "public_key" {
